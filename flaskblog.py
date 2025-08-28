@@ -1,15 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/aa")
-@app.route("/bb")
-def hello_world():
-    return "<p>Hello, World!!</p>"
-
-@app.route("/gay")
-def gay():
-    return "<p>gayaa</p>"
+@app.route("/")
+@app.route("/home")
+def home():
+    return render_template('home.html')
+@app.route("/about")
+def about():
+    return "<p>about</p>"
 
 
 if __name__ == '__main__':
