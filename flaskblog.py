@@ -7,14 +7,14 @@ posts= [
         'author': 'João Henrique Cordeiro',
         'title': 'Blog Post 1',
         'content': 'First Blog Post',
-        'data_posted': 'April 1, 2025'
+        'date_posted': 'April 1, 2025'
     },
 
     {
         'author': 'Geovana Remes Gomes Araujo',
         'title': 'Blog Post 2',
         'content': 'Second Blog Post',
-        'data_posted': 'April 2, 2025'
+        'date_posted': 'April 2, 2025'
     }
 ]
 
