@@ -1,7 +1,9 @@
 from flask import Flask, render_template, url_for
 from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8f3b6f4a9c5e1d3a2b7c9e8f6a4b2c1d'
+import os
+import os
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 posts= [
     {
         'author': 'João Henrique Cordeiro',
